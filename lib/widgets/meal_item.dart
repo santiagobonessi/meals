@@ -7,7 +7,7 @@ class MealItem extends StatelessWidget {
   final Meal meal;
   final Function removeItem;
 
-  const MealItem({@required this.meal, @required this.removeItem});
+  const MealItem({@required this.meal, this.removeItem});
 
   String get complexityText {
     switch (meal.complexity) {
